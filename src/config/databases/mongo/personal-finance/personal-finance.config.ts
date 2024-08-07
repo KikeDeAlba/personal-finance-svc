@@ -5,5 +5,6 @@ export default registerAs('personal-finance', () => ({
     PORT: process.env.MONGODB_PORT,
     USERNAME: process.env.MONGODB_USERNAME,
     PASSWORD: process.env.MONGODB_PASSWORD,
-    DATABASE: process.env.MONGODB_DATABASE_PERSONAL_FINANCE
+    DATABASE: process.env.MONGODB_DATABASE_PERSONAL_FINANCE,
+    AUTH_SOURCE: process.env.MONGO_DATABASE_AUTH_SOURCE
 }));
