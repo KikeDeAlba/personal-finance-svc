@@ -24,4 +24,8 @@ export class PersolFinanceConfigService {
     get database(): string {
         return this.config.get<string>('personal-finance.DATABASE');
     }
+
+    get authSource(): string {
+        return this.config.get<string>('personal-finance.AUTH_SOURCE');
+    }
 }

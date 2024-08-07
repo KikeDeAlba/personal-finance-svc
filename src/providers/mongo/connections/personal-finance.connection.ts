@@ -12,9 +12,10 @@ export class PersonalFinanceConnection implements MongooseOptionsFactory {
         const username = this.configService.username;
         const password = this.configService.password;
         const database = this.configService.database;
+        const authSource = this.configService.authSource;
 
         return {
-            uri: `mongodb://${username}:${password}@${host}:${port}/${database}`,
+            uri: `mongodb://${username}:${password}@${host}:${port}/${database}?authSource=${authSource}`,
         }
     }
 }
